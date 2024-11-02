@@ -4,11 +4,11 @@
 
 ### 配置说明：
 
-  本配置由神机规则修改而来，修改了默认策略组，增加了正则筛选策略组，并集成了Nobyda的去广告脚本和重写，附带按task脚本作者分类的task订阅，可按需求订阅<br>
+本配置由神机规则修改而来，，按个人使用习惯设置了默认策略组、正则筛选策略组。使用了Shawn的解析器和部分脚本，修改了默认策略组，增加了正则筛选策略组，并集成了多个作者的脚本及重写。附带按task脚本作者分类的task订阅，可按需求订阅<br>
 
 ### 使用方法：
 
-  1.点击库中的Orz-3.conf文件，点击raw获取真实地址，复制地址备用<br>
+  1.点击库中的Orz-3.conf文件，点击raw获取真实地址，复制地址备用(手机端是点代码右上方的三个点，然后点View）<br>
 
   2.Quan X主界面，点击右下角风车，然后弹出界面下拉至 配置文件-下载，点击下载，将上一步复制的地址粘贴到弹出窗口，然后点确定<br>
 
@@ -45,16 +45,10 @@
   3.限定区域的流媒体服务已经指向对应区域策略（UK和KR除外因为没做相应地区策略）TikTok默认指定全球加速，国内网站默认指定Direct，去广告默认指定Reject<br>
 
 ## 重写
-
-  Youtube去广告：不适用允许 UDP 转发的节点及 Premium <br>
-
-  Bilibili换区：需先在重写中开启对应重写，然后点击风车-其他设置-关闭温和策略机制 此脚本也支持搜索换区，只需在在搜索框添加后缀" 港", " 台", " 中". 即可搜索指定区域番剧。例如: 进击的巨人 港 <br>
-
-  比价脚本：包含京东和淘宝的比价，其中淘宝不生效或失效的需要卸载重装，注意不开脚本进淘宝会失效
   
   Cookie：这个是Task脚本获取Cookie用的，Task脚本请在Task文件夹内按需求添加订阅，使用需额外在重写中启用JS-GetCookie，并按脚本中说明获取cookie方可用
 
-  Tiktok枷锁：默认已解锁Tiktok日区，如需改区，本地在[rewrite_local]下方添加(?<=_region=)CN(?=&) url 307 JP  将JP更改成你想改的区域<br>
+  Tiktok解锁：（需要抓包旧版本的，不会的禁用吧，用不了的）默认已解锁Tiktok日区，如需改区，本地在[rewrite_local]下方添加(?<=_region=)CN(?=&) url 307 JP  将JP更改成你想改的区域<br>
   
 ## BoxJS
 
@@ -68,34 +62,37 @@ BoxJS访问地址设定为 http://boxjs.com/
 #### 特别感谢：
 
   * [@ConnersHua](https://github.com/ConnersHua)
-
+ 
   * [@KOP-XIAO](https://github.com/KOP-XIAO)
 
   * [@JasonLee-Go](https://github.com/JasonLee-Go)
   
   * [@NobyDa](https://github.com/NobyDa)
+
+  * [@ddgksf2013](https://github.com/ddgksf2013)
   
-  * [@fmz200](https://github.com/fmz200)
-  
-  * Telegram-张军
-
- #### JS脚本作者： 
- 
- * [@yichahucha](https://github.com/yichahucha)
-
- * [@Choler](https://github.com/Choler)
- 
- * [@srk24](https://github.com/srk24)
- 
- * [@blackmatrix7](https://github.com/blackmatrix7)
-
- * [@JDHelloWorld](https://github.com/JDHelloWorld)
- 
- * [@StimeKe](https://github.com/StimeKe)
- 
- * [@app2smile](https://github.com/app2smile)
+  * [@app2smile](https://github.com/app2smile)
 
 #### BoxJS作者： 
 
- * [@chavyleung](https://github.com/chavyleung)
+  * [@chavyleung](https://github.com/chavyleung)
  
+#### Sub-Store作者： 
+
+  * [@Peng-YM](https://github.com/Peng-YM)
+   
+
+#### JS脚本作者： 
+ 
+  * [@yichahucha](https://github.com/yichahucha)
+
+  * [@Choler](https://github.com/Choler)
+ 
+  * [@srk24](https://github.com/srk24)
+ 
+  * [@JDHelloWorld](https://github.com/JDHelloWorld)
+ 
+  * [@StimeKe](https://github.com/StimeKe)
+ 
+  * [@app2smile](https://github.com/app2smile)
+
